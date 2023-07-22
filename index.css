@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header section start */
+header{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    padding: 20px 10px;
+    z-index: 1;
+   
+}
+
+.nav{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.navItems li{
+    list-style: none;
+    float: left;
+    padding-left: 30px;  
+    padding-top: 20px; 
+}
+.navItems li a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;  
+    font-family: sans-serif;
+    justify-content: center; 
+    align-items: center;  
+}
+.navItems li a:hover{
+    color: lightgray;
+}
+#order{
+    border: 1px solid #ff6900;
+    background-color: #ff6900;
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    margin-top: -8px;
+}
+#toggle{
+    font-size: 25px;
+    padding-top: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#listItems1{
+    width: 100%;
+    border-top: 2px solid white;
+    background-color: black; 
+    display: none; 
+}
+#listItems1 li{
+    font-size: 14px;
+    list-style: none;
+    padding-left:50px ;
+    font-weight: bold;
+    font-family: sans-serif;    
+}
+.hiddenList li a{
+    list-style: none;
+    text-decoration: none;
+    line-height: 45px;
+    color:white;
+}
+#nestList{
+    color: white;
+}
+#nestList li{
+    list-style: none;
+    padding-left: 50px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+#order1{
+    border: 1px solid #ff6900;
+    background-color: #ff6900;
+    width: 100%;
+    height: 50px;
+    text-align: center;  
+}
+#down{
+    font-size: 13px;
+    padding-left: 5px;
+}
+#down:hover{
+    color: lightgray;
+}
+.dropdown{
+    display: none;
+    /* opacity: 0; */
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    min-width: 240px;
+    padding: 12px 16px;
+
+}
+.dropdown li{
+    color: white;
+}
+#drop{
+    position: relative;
+    display: inline-block;
+}
+#drop:hover .dropdown:hover {
+    /* opacity: 1; */
+    display: block;
+}
+/* section1 starts */
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bruCoffee.png);
+    background-size: cover;
+    display: flex;
+   
+}
+#bruImg{
+    max-width: 25%;
+    /* height: 25%; */
+}
+.img-sec{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    justify-content: center;
+}
+#order2{
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#order2:hover{
+    border: 3px solid black;
+    
+    
+}
+#right-hidden{
+    opacity: 0;
+    transform: translateX(30px);
+    
+}
+
+#right-hidden:hover{
+    animation: hidden 2s ease-in-out forwards;
+}
+@keyframes hidden {
+    from{
+        opacity: 0;
+        transform:translateX(30px) ;
+
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0px) ;
+
+    }
+    
+}
+/* section1 end */
+
+/* section2 starts */
+.sec2{
+    width: 100%;
+    /* height: 100vh; */
+  
+}
+.sec2Head{
+    color: black;
+    font-size: 3.95vw ;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 40px;
+}
+
+.img1Text{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+.texth3{
+    font-family: Oswald, Helvetica, Arial, Lucida, sans-serif;
+    
+}
+.textp{
+    font-size: 19px;
+    color: gray;
+    font-family: sans-serif;
+
+}
+.imgs{
+    width: 300px;
+    object-fit: cover;
+    max-width: 1200px;
+    /* object-position:bottom; */
+    padding: 20px;
+   
+}
+.first4{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.sec2Second{
+    margin-top: 20px;
+}
+
+/* section2 end */
+
+/* section3 starts */
+.sec3{
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.abs2{
+   /* margin:10px 100px ; */
+   width: 100%;
+   /* display: flex; */
+   /* display: hidden; */
+   /* animaion: slide 16s infinite; */
+
+}
+
+
+/* section3 end */
+
+/* section4 starts */
+.sec-4{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.sec4Head{
+    color: black;
+    font-size: 3.5vw ;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.talk-imgs{
+    width: 300px;
+    object-fit: cover;
+    max-width: 1200px;
+    /* object-position:bottom; */
+    /* padding: 20px; */
+   
+}
+.talk{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+.talkh3{
+    font-family: Oswald, Helvetica, Arial, Lucida, sans-serif;
+    
+}
+.talkp{
+    font-size: 15px;
+    color: gray;
+    font-family: sans-serif;
+
+}
+.talkText{
+    text-align: center;
+    padding-top: 20px;
+    /* padding-left: 20px; */
+    line-height: 30px;
+}
+#icon{
+    color: gray;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+.icn{
+    text-align: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+.talkbtn{
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+#tlkbtn{
+        color: black;
+        background: transparent;
+        font-size: 19px;
+        /* font-size: 1.8vw; */
+        padding: 13px 25px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+}
+#tlkbtn:hover{
+    background-color: black;
+    color: white;
+}
+/* section4 end */
+
+/* section5 starts */
+.sec-5{
+    width: 100%;
+    margin-top: 60px;
+}
+#insta{
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 20px;
+    padding: 12px;
+}
+.bruok{
+    margin-left: 270px;
+}
+.bruok a{
+    text-decoration: none;
+    color: black;
+}
+.bruok span{
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+.img-Card{
+    width: 250px;
+    object-fit: cover;
+    max-width: 1200px;
+    /* object-position:bottom; */
+    padding: 10px;
+}
+.imgcards{
+    margin: 10px 150px 0px 150px;
+}
+.cards1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.img-Card:hover{
+    opacity: .7;
+}
+.butns{
+    text-align: center;
+    justify-content: center;
+}
+.loadmore{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.loadmore span{
+    padding-left: 5px;
+}
+
+/* section5 end */
+
+/* footer section starts */
+.footer-sec{
+    margin-top: 50px;
+    /* background-image: url(images/footer.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(33, 29, 29);
+    /* height: 70vh; */
+}
+
+.footerContent{
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    color: white;
+    /* padding-left: 100px; */   
+}
+.footerContent li{
+    list-style: none;
+    line-height: 35px;
+    font-size: 18px;   
+}
+.one{
+    margin-top: -50px;
+    flex: 1;
+}
+.two{
+    flex: 1;
+}
+.third{
+    flex: 1;
+}
+.fourth{
+    flex: 1;
+}
+.footerContent div{
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-family: sans-serif;
+    margin: 0px 100px 0px 100px;
+}
+.li2{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#one-btn{
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 15px;
+        /* font-size: 1.8vw; */
+    padding: 13px 30px;
+       
+}
+
+@media screen and (max-width:1206px) {
+    #bruImg{
+        max-width: 30%;
+    }
+    .sec2Head{
+        font-size: 60px; 
+    }
+    .sec4Head{
+        font-size:60px;
+
+    }
+    .icn{
+        padding-left: 5px;
+    }
+    .talkp{
+        padding-left: 10px;
+    }
+  
+}
+
+@media screen and (max-width:1024px) {
+    .sec4Head{
+        font-size:50px;
+
+    }
+   
+}
+
+@media screen and (max-width:981px) {
+    .listItems li{
+        display: none;
+    }
+    #drop{
+        display: none;
+    }
+    #toggle{
+        display: block;
+        color: white;
+        padding-right: 20px;
+    }
+    #bruImg{
+        max-width: 30%;
+    }
+    .sec2Head{
+        font-size: 40px; 
+    }
+    .sec4Head{
+        font-size:40px;
+
+    }
+       
+}
+/* @media screen and (max-width:900) {
+    .first4{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+} */
+
+
+@media screen and (max-width:854px) {
+    #bruImg{
+        max-width: 30%;
+    }
+    .sec2Head{
+        font-size: 40px; 
+    }
+    .sec4Head{
+        font-size:40px;
+
+    }
+    .talk{
+        flex-direction: column;
+    }
+    .icn{
+        padding-top: 25px;
+    }
+    .first4{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+    .img4{
+        padding-top: 20px;
+    }
+    
+    
+}
+@media screen and (max-width:768px) {
+    #bruImg{
+        max-width: 50%;
+    }
+    .abs2{
+        margin:unset ;
+     }
+     
+    .sec2Head{
+        font-size: 40px; 
+    }
+    .sec4Head{
+        font-size:33px;
+
+    }
+    .icn{
+        padding-left: 5px;
+    }
+
+    /* .absol{
+        flex-direction: column;
+    } */
+    .footerContent{
+        flex-direction: column;
+    }
+   
+   
+}
+
+
+
+ 
+@media screen and (max-width:425px) {
+    #bruImg{
+        max-width: 70%;
+    }
+    .sec2Head{
+        font-size: 30px; 
+    }
+    .sec4Head{
+        font-size:28px;
+
+    }
+    .icn{
+        padding-left: 5px;
+    }
+    .bruok{
+        margin-left: 60px;
+    }
+    
+    
+}
+@media screen and (max-width:375px) {
+    #bruImg{
+        max-width: 100%;
+    }
+    .icn{
+        padding-left: 0px;
+    }
+    .bruok{
+        margin-left: 40px;
+    }
+    /* #abt{
+        font-size: 20px;;
+    } */
+    #bruImg{
+        width: 100%;
+    }
+    .two{
+        border-bottom: 1px solid gray;
+
+    }
+    .third{
+        border-bottom: 1px solid gray;
+    }
+      
+
+}
+@media screen and (max-width:321px) {
+    #bruImg{
+        max-width: 100%;
+        height: auto;
+    }
+    .icn{
+        padding-left: 8px;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    #bruImg{
+        max-width: 100%;
+    }
+    .sec2Head{
+        font-size: 13px; 
+    }
+    #toggle{
+        display: none;
+    }
+   
+    #order2{
+        padding: 10px 10px;
+        font-size: 15px;
+       
+    }
+    .sec4Head{
+        font-size:13px;
+
+    }
+}
+
