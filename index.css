@@ -125,7 +125,7 @@ header{
 }
 #bruImg{
     max-width: 25%;
-    /* height: 25%; */
+   
 }
 .img-sec{
     position: absolute;
@@ -177,7 +177,6 @@ header{
 /* section2 starts */
 .sec2{
     width: 100%;
-    /* height: 100vh; */
   
 }
 .sec2Head{
